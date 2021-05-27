@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>First .js coding</title>
+</head>
+
+<body>
+    <div id="adder.js">
+        <h1>Adder.js - Script</h1>
+        <div class="script-code">
+            <p class="comment">// Create two variables, `num1` and `num2`. Store any numbers in the variables.</p>
+            <p class="code">console.log("Psst...I gots some nums for ya");</p>
+            <p class="code">const num1 = 23; const num2 = 45;</p>
+            <p class="code">console.log("Check this, it's a ", num1, " and a ", num2)</p>
+            <p class="comment">// Below this, add `num1` and `num2` together and store the result in a new variable (name it whatever you want). const num3 = num1 + num2;</p>
+            <p class="code">console.log("I add 'em together and viola a beautiful ", num3);</p>
+            <p class="comment">// Finlly, log out `num1`, `num2`, and `sum` in a human readable sentence (i.e.: "8 and 5 add to 13").</p>
+            <p class="code">console.log("Today's prefomance was brought to you by the number ", num1, "who played 'num1', ", num2, " who dazzled us as 'num2' and last but not least number ", num3, ", showing off what you can do as 'num3' when you add the other two!")</p>
+            <br>
+            <div class="code-final">Psst...I gots some nums for ya Check this, it's a 23 and a 45 I add 'em together and viola a beautiful 68 Today's prefomance was brought to you by the number 23 who played 'num1' , 45 who dazzled us as 'num2' and last but not least number
+                68 showing
+            </div>
+        </div>
+        <code><b>hippietaoist@pop-os:~/Documents/VS-Code/WDI-05-21/workspace/Javascript/variable-math$ node adder.js</b>
+            Psst...I gots some nums for ya
+            Check this, it's a  23  and a  45
+            I add 'em together and viola a beautiful  68
+            Today's prefomance was brought to you by the number  23 who played 'num1',  45  who dazzled us as 'num2' and last but not least number  68 , showing off what you can do as 'num3' when you add the other two!</code>
+    </div>
+    <br>
+    <div id="distance.js">
+        <h1>Distance.js</h1>
+        <div class="script-code">
+            <p class="comment">// Create four variables, `x1`, `y1`, `x2`, and `y2` and store numbers in each of them. const x1 = 23; const x2 = 32; const y1 = 41; const y2 = 14; <br>// Calculate the distance between coordinates (x1, y1) and (x2, y2). Log this distance
+                out to the user in a human readable sentence.</p>
+            <p class="code">const dist = Math.sqrt(Math.pow((x2 + x1), 2) + Math.pow((y2 - y1), 2));</p>
+            <p class="code-final">console.log("So, when you take the distance between coordinantes (", x1, ", ", y1, ") and (", x2, " ,", y2, "), you're going to come to a distance of ", dist, ". ", dist, " whats... I just don't know. Let's just stick with units, I'll let
+                you choose distance...");</p>
+            <p class="code">console.log(dist, " Lightyears..");</p>
+            <p class="code">console.log(dist, " Miles..");</p>
+            <p class="code">console.log(dist, " Parsecs..");</p>
+            <p class="code">console.log(dist, " Inches..");</p>
+            <p class="code">console.log("What distance are you willing to go?")</p>
+            <p class="comment">// The distance formula along with an example can be found below.</p>
+            <div class="comment">//<img src="https://cdn.tutors.com/assets/images/courses/math/geometry-help/tutors-how-to-use-the-distance-formula.jpg" width="400px" /></div>
+        </div>
+        <code><b>hippietaoist@pop-os:~/Documents/VS-Code/WDI-05-21/workspace/Javascript/variable-math$ node distance.js</b>
+                    node distance.js 
+                    So, when you take the distance between coordinantes ( 23 ,  41 ) and ( 32  , 14 ), you're going to come to a distance of  61.26989472816156 .  61.26989472816156  whats... I just don't know. Let's just stick with units, I'll let you choose distance...
+                    <br>61.26989472816156  Lightyears..
+                    <br>61.26989472816156  Miles..
+                    <br>61.26989472816156  Parsecs..
+                    <br>61.26989472816156  Inches..
+                    <br>What distance are you willing to go?</code>
+    </div>
+    <div id="future-age.js">
+        <h1>Future-Age.js</h1>
+        <div class="script-code">
+            <p class="comment"> // Create a variable called age and set its value to your age. Now, write another line of code that logs out a sentence telling you how old you will be in five years.</p>
+
+            <p class="code">console.log("I am 41");
+            </p>
+            <p class="code">const age = 41;
+            </p>
+            <p class="code">console.log("In five years I....");
+            </p>
+            <p class="code">const futureAge = age + 5;
+            </p>
+            <p class="code-final">console.log("Should be 46...", "Computer Says...", futureAge); console.log("We have a winner!");
+            </p>
+        </div>
+        <code><b>hippietaoist@pop-os:~/Documents/VS-Code/WDI-05-21/workspace/Javascript/variable-math$</b>
+                node future-age.js
+                <br>I am 41
+                <br>In five years I....
+                <br>Should be 46... Computer Says... 46
+                <br>We have a winner!</code>
+    </div>
+    <div id="greeter.js">
+        <h1>Greeter.js</h1>
+        <p class="comment">// Create a variable `name` and store your name in it.</p>
+        <p class="code">const name = "Shawn";</p>
+        <p class="code">console.log(name);</p>
+        <p class="comment">// Below this, write a line of code that displays some greeting to that name (i.e.: "Hello Barry!")</p>
+        <p class="code-final">console.log("Did you know that 'name' was depreciated in Javascript? I'm deprciating 'Hello World' as the standard. New templates be stated as...") <br>console.log("");<br> console.log("Hello ", name, "!");<br> console.log("") console.log("No
+            Egos here... :-)
+            <---Sarcasm ")</p>
+                <code><b>hippietaoist@pop-os:~/Documents/VS-Code/WDI-05-21/workspace/Javascript/variable-math$</b>
+                    node greeter.js
+                    <br>Shawn
+                    <br>Did you know that 'name' was depreciated in Javascript? I'm <br>deprciating 'Hello World' as the standard. New templates be <br>stated as...
+                    <br>
+                    <br>Hello  Shawn !
+                    <br>
+                    <br>No Egos here... :-) <---Sarcasm</code>
+    </div>
+    <div id="quadratic.js ">
+        <h1>Quadratic.js</h1>
+        <p class="comment ">// Create three variables, `a`, `b`, and `c`.</p>
+        <p class="code " >const a = 46;</p>
+        <p class="code " >const b = 786;</p>
+        <p class="code " >const c = 12;</p>
+        <br>
+        
+        
+        <p class="comment ">// Set them to any numbers you please as long as:</p>
+        <p class="comment ">// * a is not zero</p>
+        <p class="comment ">// * `b²` is greater than or equal to `4 × a × c`</p>
+        
+        <p class="comment ">// Now use the quadratic formula (oh no) to calculate two value of two new variables, `x1` and `x2`.</p>
+        
+        <p class="comment ">// <img src="https://i.ytimg.com/vi/lhQKfuAVkm4/maxresdefault.jpg " width="400px " />
+        </p>
+        <p class="comment ">// Note: you'll need to do the formula twice. For `x1`, use a + in place of the ± symbol. For `x2`, use a -.</p>
+        <div class="code-final ">
+            <p class="code "> 
+                const x1 = ((-b + Math.sqrt(Math.pow(b, 2)) - (4 * a * c))) / (2 * a); </p>
+                <p class="code " >
+                    const x2 = ((-b - Math.sqrt(Math.pow(b, 2))
+                    - (4 * a * c))) / (2 * a); </p>
+                    <p class="code ">console.log(x1);</p> 
+                    <p class="code ">console.log(x2);</p>
+                </div>
+                <code><b>hippietaoist@pop-os:~/Documents/VS-Code/WDI-05-21/workspace/Javascript/variable-math$</b>node quadratic.js
+                    <br> -24
+                    <br>-41.08695652173913</code>
+    </div>
+    <div id="remainder.js ">
+        <h1>Remainder.js</h1>
+        <div class="code-script ">
+            <p class="comment "> // Create two variables that each store a positive number (name them anything you want, any positive numbers will do).</p>
+            <p class="code ">const pos1 = 8;</p>
+            <p class="code ">const pos2 = 2;</p>
+            <p class="code ">const result = pos1 / pos2;</p>
+            <p class="comment ">// Log out how the remainder that is left over when the first number is divided by the second number (i.e.: "the remainder of 7 divided by 3 is 1 ")</p>
+            <p class="code-final ">console.log("So looking at the numbers, ", pos1, " and ", pos2, " we can see the resulting division of ", pos1, " and ", pos2, " will result in the number of ", result, " and a remainder of ", pos1 % pos2), ". ";</p>
+        </div>
+        <code><b>hippietaoist@pop-os:~/Documents/VS-Code/WDI-05-21/workspace/Javascript/variable-math$</b>node remainder.js
+            <br>So looking at the numbers,  8  and  2  we can see the resulting division of  8  and  2  will result in the num<br>ber of  4  and a remainder of  0</code>
+    </div>
+                                                    
+                                                </body>
+                                                
+                                                </html>
