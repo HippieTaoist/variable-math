@@ -1,0 +1,23 @@
+            .comment {
+                color: green;
+            }
+            
+            .code {
+                color: blue;
+            }
+            
+            .code-final {
+                width: 100%;
+                background-image: repeating-linear-gradient(to left, blue, green, red, green, blue);
+                -webkit-background-clip: text;
+                color: transparent;
+                border: 5px blue dotted;
+                padding: 5px;
+            }
+            
+            code {
+                display: flex;
+                border: 1px black solid;
+                background-color: gray;
+                margin: 5px;
+            }
